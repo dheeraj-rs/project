@@ -1,57 +1,13 @@
 <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>D Software - Innovative Solutions for Your Business</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-      </head>
-      <body class="font-sans text-gray-800 bg-light antialiased">
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
-      
-<script>
-(function() {
-  if (window._routeTrackerInstalled) return;
-  window._routeTrackerInstalled = true;
-
-  const notify = () => {
-    try {
-        window.parent.postMessage({
-            type: 'ROUTE_CHANGE',
-            path: location.pathname + location.search + location.hash
-        }, '*');
-    } catch (e) {}
-  };
-  
-  const originalPush = history.pushState;
-  const originalReplace = history.replaceState;
-  
-  history.pushState = function(...args) {
-    originalPush.apply(this, args);
-    setTimeout(notify, 10);
-  };
-  
-  history.replaceState = function(...args) {
-    originalReplace.apply(this, args);
-    setTimeout(notify, 10);
-  };
-  
-  window.addEventListener('popstate', notify);
-  setTimeout(notify, 100);
-
-  window.addEventListener('message', (event) => {
-    if (event.data?.type === 'NAVIGATE') {
-        const path = event.data.path;
-        if (path && path !== location.pathname + location.search + location.hash) {
-            window.location.href = path;
-        }
-    }
-  });
-})();
-</script>
-</body>
-    </html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>project</title>
+   </head>
+   <body>
+     <div id="root"></div>
+     <script type="module" src="/src/main.jsx"></script>
+   </body>
+ </html>
