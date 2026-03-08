@@ -2,162 +2,49 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header data-component-name="HEADER 2" class="w-full relative z-50 bg-zinc-950/90 backdrop-blur-sm border-b border-zinc-900 transition-all duration-300" data-sidebar-id="Header-1" data-aria-hidden="true" aria-hidden="true">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-24">
-      
-      <!-- Logo -->
-      <div class="flex-shrink-0">
-        <a href="#" class="flex items-center gap-2 group">
-          <div class="text-white font-black text-2xl tracking-tighter">
-            DIGITAL<span class="text-zinc-500">CRAFTS</span>.
-          </div>
-        </a>
-      </div>
-
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-12">
-        <a href="#about" class="text-sm font-semibold text-zinc-400 hover:text-white uppercase tracking-widest transition-colors">Studio</a>
-        <a href="#work" class="text-sm font-semibold text-zinc-400 hover:text-white uppercase tracking-widest transition-colors">Work</a>
-        <a href="#expertise" class="text-sm font-semibold text-zinc-400 hover:text-white uppercase tracking-widest transition-colors">Expertise</a>
-      </nav>
-
-      <!-- Desktop CTA -->
-      <div class="hidden md:flex items-center">
-        <a href="#contact" class="group relative inline-flex items-center justify-center px-6 py-2.5 bg-white text-zinc-950 font-bold overflow-hidden rounded text-sm hover:text-white transition-colors duration-300">
-          <span class="absolute inset-0 w-full h-full bg-zinc-800 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out z-0"></span>
-          <span class="relative z-10 flex items-center gap-2">Let's Talk</span>
-        </a>
-      </div>
-
-      <!-- Mobile menu button -->
-      <div class="md:hidden flex items-center">
-        <button id="h2-mobile-btn" class="text-zinc-300 hover:text-white focus:outline-none p-2 rounded-full border border-zinc-800 hover:border-zinc-600 transition-colors">
-          <svg class="h-5 w-5" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-          </svg>
-        </button>
-      </div>
-      
+    <div dangerouslySetInnerHTML={{ __html: `<header class="bg-gray-900 font-sans relative" data-component-name="HEADER 5" data-sidebar-id="Header-4">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5 text-white text-xl font-bold font-mono tracking-tighter">
+        <span class="text-indigo-500">&lt;D-Admin</span><span class="text-indigo-500">/&gt;</span>
+      </a>
     </div>
-  </div>
+    <div class="flex lg:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-white" data-collapse-toggle="mobile-menu-header-5" aria-controls="mobile-menu-header-5" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-indigo-400 transition-colors">Documentation</a>
+      <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-indigo-400 transition-colors">API Reference</a>
+      <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-indigo-400 transition-colors">Showcase</a>
+      <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-indigo-400 transition-colors">Community</a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
+      <a href="#" class="text-sm font-semibold leading-6 text-white hover:text-indigo-400 my-auto">Log in</a>
+      <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition-all">Start Building</a>
+    </div>
+  </nav>
 
-  <!-- Mobile Navigation Menu -->
-  <div id="h2-mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-zinc-900 absolute w-full left-0 top-24">
-    <div class="px-6 py-8 space-y-6 text-center">
-      <a href="#about" class="block text-xl font-bold text-zinc-400 hover:text-white uppercase tracking-widest">Studio</a>
-      <a href="#work" class="block text-xl font-bold text-zinc-400 hover:text-white uppercase tracking-widest">Work</a>
-      <a href="#expertise" class="block text-xl font-bold text-zinc-400 hover:text-white uppercase tracking-widest">Expertise</a>
-      <div class="pt-6 border-t border-zinc-900">
-        <a href="#contact" class="inline-block px-8 py-4 bg-white text-zinc-950 font-bold rounded">Let's Talk</a>
+  <!-- Mobile menu -->
+  <div class="hidden lg:hidden bg-gray-800 border-t border-gray-700" id="mobile-menu-header-5">
+    <div class="space-y-1 px-4 py-6">
+      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700">Documentation</a>
+      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700">API Reference</a>
+      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700">Showcase</a>
+      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700">Community</a>
+      <div class="mt-4 pt-4 border-t border-gray-700">
+        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-700">Log in</a>
+        <a href="#" class="mt-2 block w-full text-center rounded-md bg-indigo-500 px-3 py-2.5 text-base font-semibold text-white hover:bg-indigo-400">Start Building</a>
       </div>
     </div>
   </div>
 </header>
 
-<script>
-  const h2Btn = document.getElementById('h2-mobile-btn');
-  const h2Menu = document.getElementById('h2-mobile-menu');
-  if(h2Btn && h2Menu) {
-    h2Btn.addEventListener('click', () => {
-      h2Menu.classList.toggle('hidden');
-    });
-  }
-</script>
-<section data-component-name="HERO 3" class="relative min-h-screen flex items-center bg-[#0a0a0a] overflow-hidden text-[#e5e5e5]" data-sidebar-id="Hero-2" data-aria-hidden="true" aria-hidden="true">
-  
-  <!-- Cyberpunk Grid Background -->
-  <div class="absolute inset-0 bg-[#0a0a0a] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] z-0"></div>
-
-  <!-- Glowing Line -->
-  <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#22d3ee] to-transparent shadow-[0_0_20px_#22d3ee] animate-pulse"></div>
-
-  <!-- Content Container -->
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-16">
-    
-    <div class="flex-1 flex flex-col items-start font-mono">
-      <div class="inline-flex items-center gap-3 px-4 py-2 border border-[#22d3ee]/30 bg-[#22d3ee]/5 text-[#22d3ee] rounded-sm uppercase tracking-widest text-xs font-semibold mb-8 animate-fade-in">
-        <span class="w-2 h-2 bg-[#22d3ee] shadow-[0_0_8px_#22d3ee] animate-ping"></span>
-        System Online
-      </div>
-      
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-6 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] animate-glitch" title="NEXT-GEN INTERFACES">
-        NEXT-GEN<br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-[#a855f7]">INTERFACES</span>
-      </h1>
-      
-      <p class="text-lg md:text-xl text-[#a3a3a3] max-w-xl mb-10 leading-relaxed font-sans border-l-2 border-[#a855f7] pl-4">
-        We engineer high-performance web applications with futuristic aesthetics. Merging cutting-edge technology with cyberpunk design principles to dominate the digital frontier.
-      </p>
-      
-      <div class="flex gap-4">
-        <a href="#" class="group relative px-8 py-4 bg-transparent border border-[#22d3ee] text-[#22d3ee] font-bold uppercase tracking-widest text-sm overflow-hidden hover:text-[#0a0a0a] transition-colors duration-300">
-          <span class="absolute inset-0 bg-[#22d3ee] -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-300 ease-out z-0"></span>
-          <span class="relative z-10">Initialize Project</span>
-        </a>
-        <a href="#" class="px-8 py-4 bg-transparent border border-[#333] text-[#888] font-bold uppercase tracking-widest text-sm hover:border-[#a855f7] hover:text-[#a855f7] hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all duration-300">
-          Access Database
-        </a>
-      </div>
-    </div>
-    
-    <!-- Neon Decoration Image/Object -->
-    <div class="flex-1 w-full max-w-md relative animate-float">
-      <div class="absolute inset-0 bg-gradient-to-br from-[#22d3ee] to-[#a855f7] filter blur-[100px] opacity-40 rounded-full"></div>
-      <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Cyberpunk Element" class="relative z-10 w-full h-auto object-cover rounded-sm border border-[#333] shadow-[0_0_30px_rgba(34,211,238,0.2)] grayscale contrast-150 hover:grayscale-0 transition-all duration-700 cursor-none">
-    </div>
-
-  </div>
-</section>
-
-<style data-aria-hidden="true" aria-hidden="true">
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
-}
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
-}
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-/* Subtle hover glitch effect */
-.animate-glitch:hover {
-  text-shadow: 2px 0 #22d3ee, -2px 0 #a855f7;
-  animation: glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-}
-@keyframes glitch-skew {
-  0% { transform: skew(0deg); }
-  20% { transform: skew(-5deg); }
-  40% { transform: skew(5deg); }
-  60% { transform: skew(-5deg); }
-  80% { transform: skew(5deg); }
-  100% { transform: skew(0deg); }
-}
-</style>
-<section data-component-name="ABOUT 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="About-2" data-aria-hidden="true" aria-hidden="true">
+<section data-component-name="ABOUT 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="About-2">
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
   <div class="relative z-10 max-w-7xl mx-auto">
     <div class="flex items-center gap-4 mb-16">
@@ -215,7 +102,7 @@ const Home = () => {
     </div>
   </div>
 </section>
-<section data-component-name="PROJECTS 2" class="bg-zinc-950 py-24 px-4 sm:px-6 lg:px-8" data-sidebar-id="Projects-1" data-aria-hidden="true" aria-hidden="true">
+<section data-component-name="PROJECTS 2" class="bg-zinc-950 py-24 px-4 sm:px-6 lg:px-8" data-sidebar-id="Projects-1">
   <div class="max-w-7xl mx-auto">
     <div class="border-t border-zinc-800 pt-16 mb-16">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -262,142 +149,66 @@ const Home = () => {
     </div>
   </div>
 </section>
-<section data-component-name="SERVICES 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="Services-2" data-aria-hidden="true" aria-hidden="true">
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-  <div class="relative z-10 max-w-7xl mx-auto">
-    <div class="flex items-center gap-4 mb-4">
-      <span class="w-2 h-2 bg-[#22d3ee] shadow-[0_0_8px_#22d3ee] animate-pulse"></span>
-      <span class="text-[#22d3ee] text-xs uppercase tracking-[0.3em]">// services.init</span>
-    </div>
-    <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tighter text-white mb-16">SYSTEM<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-[#a855f7]">MODULES</span></h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="border border-[#22d3ee]/20 p-8 hover:border-[#22d3ee]/50 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] transition-all duration-300 group">
-        <div class="text-[#22d3ee] text-xs uppercase tracking-[0.3em] mb-4">MODULE_01</div>
-        <h3 class="text-xl font-black text-white uppercase tracking-tight mb-3">Web Engineering</h3>
-        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Full-stack development using React, Next.js, Node.js and PostgreSQL. Production-grade architecture from day one.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">React</span>
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">Next.js</span>
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">Node</span>
-        </div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-8 hover:border-[#a855f7]/50 hover:bg-[#a855f7]/5 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] transition-all duration-300 group">
-        <div class="text-[#a855f7] text-xs uppercase tracking-[0.3em] mb-4">MODULE_02</div>
-        <h3 class="text-xl font-black text-white uppercase tracking-tight mb-3">Interface Design</h3>
-        <p class="text-zinc-500 text-sm leading-relaxed mb-6">User experience architected from research to pixel-perfect components. Design systems that scale across products.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">Figma</span>
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">UX Research</span>
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">Design Systems</span>
-        </div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-8 hover:border-[#a855f7]/50 hover:bg-[#a855f7]/5 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] transition-all duration-300 group">
-        <div class="text-[#a855f7] text-xs uppercase tracking-[0.3em] mb-4">MODULE_03</div>
-        <h3 class="text-xl font-black text-white uppercase tracking-tight mb-3">Infrastructure &amp; DevOps</h3>
-        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Cloud-native infrastructure setup, CI/CD pipelines, containerization, and monitoring for production systems.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">AWS</span>
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">Docker</span>
-          <span class="text-xs text-[#a855f7]/70 border border-[#a855f7]/20 px-2 py-1">Terraform</span>
-        </div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-8 hover:border-[#22d3ee]/50 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] transition-all duration-300 group">
-        <div class="text-[#22d3ee] text-xs uppercase tracking-[0.3em] mb-4">MODULE_04</div>
-        <h3 class="text-xl font-black text-white uppercase tracking-tight mb-3">AI Integration</h3>
-        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Embed intelligence into your product pipeline with custom LLM integrations, RAG systems, and AI workflows.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">OpenAI</span>
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">LangChain</span>
-          <span class="text-xs text-[#22d3ee]/70 border border-[#22d3ee]/20 px-2 py-1">Vector DB</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section data-component-name="SKILLS 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="Skills-2" data-aria-hidden="true" aria-hidden="true">
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-  <div class="relative z-10 max-w-7xl mx-auto">
-    <div class="flex items-center gap-4 mb-4">
-      <span class="w-2 h-2 bg-[#a855f7] shadow-[0_0_8px_#a855f7] animate-pulse"></span>
-      <span class="text-[#a855f7] text-xs uppercase tracking-[0.3em]">// skills.manifest</span>
-    </div>
-    <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tighter text-white mb-16">CORE<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-[#a855f7]">CAPABILITIES</span></h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-      <!-- Each skill as a glowing card -->
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">⚛️</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">React</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">▲</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">Next.js</div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-4 text-center hover:border-[#a855f7]/60 hover:bg-[#a855f7]/5 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🟦</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#a855f7] transition-colors uppercase tracking-wider">TypeScript</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🟢</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">Node.js</div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-4 text-center hover:border-[#a855f7]/60 hover:bg-[#a855f7]/5 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🐘</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#a855f7] transition-colors uppercase tracking-wider">PostgreSQL</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🐳</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">Docker</div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-4 text-center hover:border-[#a855f7]/60 hover:bg-[#a855f7]/5 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">☁️</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#a855f7] transition-colors uppercase tracking-wider">AWS</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🎨</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">Figma</div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-4 text-center hover:border-[#a855f7]/60 hover:bg-[#a855f7]/5 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🔴</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#a855f7] transition-colors uppercase tracking-wider">Redis</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🕸️</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">GraphQL</div>
-      </div>
-      <div class="border border-[#a855f7]/20 p-4 text-center hover:border-[#a855f7]/60 hover:bg-[#a855f7]/5 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🐍</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#a855f7] transition-colors uppercase tracking-wider">Python</div>
-      </div>
-      <div class="border border-[#22d3ee]/20 p-4 text-center hover:border-[#22d3ee]/60 hover:bg-[#22d3ee]/5 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300 group cursor-pointer">
-        <div class="text-2xl mb-2">🔱</div>
-        <div class="text-xs text-zinc-400 group-hover:text-[#22d3ee] transition-colors uppercase tracking-wider">Prisma</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section data-component-name="STATS 3" class="relative bg-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8 font-mono" data-sidebar-id="Stats-2" data-aria-hidden="true" aria-hidden="true">
+<section data-component-name="SERVICES 2" class="bg-zinc-950 py-24 px-4 sm:px-6 lg:px-8" data-sidebar-id="Services-1">
   <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="border border-[#22d3ee]/20 p-8 text-center hover:border-[#22d3ee]/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] transition-all duration-300">
-        <div class="text-4xl sm:text-5xl font-black text-[#22d3ee] mb-2 shadow-[0_0_20px_rgba(34,211,238,0.5)] [text-shadow:0_0_20px_rgba(34,211,238,0.5)]">50+</div>
-        <div class="text-zinc-600 text-xs uppercase tracking-[0.2em]">Projects</div>
+    <div class="border-t border-zinc-800 pt-16 mb-16">
+      <span class="text-xs font-bold text-zinc-500 uppercase tracking-[0.3em]">// Services</span>
+      <h2 class="text-5xl sm:text-6xl font-black text-white tracking-tighter mt-3">WHAT I<br><span class="text-zinc-500">DELIVER</span></h2>
+    </div>
+    <div class="space-y-0">
+      <div class="group flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-zinc-800 hover:border-zinc-600 transition-colors cursor-pointer">
+        <div class="md:w-16 text-4xl font-black text-zinc-700 group-hover:text-white transition-colors">01</div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-black text-white mb-2">Full-Stack Web Development</h3>
+          <p class="text-zinc-500 max-w-2xl">End-to-end development of web apps — from database design and API architecture to stunning frontend experiences.</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-wrap gap-2">
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">React</span>
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">Node</span>
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">AWS</span>
+        </div>
+        <div class="text-zinc-600 group-hover:text-white group-hover:translate-x-2 transition-all">→</div>
       </div>
-      <div class="border border-[#a855f7]/20 p-8 text-center hover:border-[#a855f7]/60 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] transition-all duration-300">
-        <div class="text-4xl sm:text-5xl font-black text-[#a855f7] mb-2 [text-shadow:0_0_20px_rgba(168,85,247,0.5)]">30+</div>
-        <div class="text-zinc-600 text-xs uppercase tracking-[0.2em]">Clients</div>
+      <div class="group flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-zinc-800 hover:border-zinc-600 transition-colors cursor-pointer">
+        <div class="md:w-16 text-4xl font-black text-zinc-700 group-hover:text-white transition-colors">02</div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-black text-white mb-2">UI/UX Design Systems</h3>
+          <p class="text-zinc-500 max-w-2xl">Comprehensive design systems that scale. Component libraries, brand guidelines, and consistent design language.</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-wrap gap-2">
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">Figma</span>
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">Storybook</span>
+        </div>
+        <div class="text-zinc-600 group-hover:text-white group-hover:translate-x-2 transition-all">→</div>
       </div>
-      <div class="border border-[#22d3ee]/20 p-8 text-center hover:border-[#22d3ee]/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] transition-all duration-300">
-        <div class="text-4xl sm:text-5xl font-black text-[#22d3ee] mb-2 [text-shadow:0_0_20px_rgba(34,211,238,0.5)]">5yr</div>
-        <div class="text-zinc-600 text-xs uppercase tracking-[0.2em]">Experience</div>
+      <div class="group flex flex-col md:flex-row md:items-center gap-6 py-8 border-b border-zinc-800 hover:border-zinc-600 transition-colors cursor-pointer">
+        <div class="md:w-16 text-4xl font-black text-zinc-700 group-hover:text-white transition-colors">03</div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-black text-white mb-2">Performance Engineering</h3>
+          <p class="text-zinc-500 max-w-2xl">Audit and optimize for Core Web Vitals. Sub-second load times, efficient bundles, and scalable architectures.</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-wrap gap-2">
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">Lighthouse</span>
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">CDN</span>
+        </div>
+        <div class="text-zinc-600 group-hover:text-white group-hover:translate-x-2 transition-all">→</div>
       </div>
-      <div class="border border-[#a855f7]/20 p-8 text-center hover:border-[#a855f7]/60 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] transition-all duration-300">
-        <div class="text-4xl sm:text-5xl font-black text-[#a855f7] mb-2 [text-shadow:0_0_20px_rgba(168,85,247,0.5)]">99%</div>
-        <div class="text-zinc-600 text-xs uppercase tracking-[0.2em]">Satisfaction</div>
+      <div class="group flex flex-col md:flex-row md:items-center gap-6 py-8 hover:border-zinc-600 transition-colors cursor-pointer">
+        <div class="md:w-16 text-4xl font-black text-zinc-700 group-hover:text-white transition-colors">04</div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-black text-white mb-2">AI Product Development</h3>
+          <p class="text-zinc-500 max-w-2xl">Build AI-native features using OpenAI, Anthropic, and custom models. From chatbots to intelligent automation.</p>
+        </div>
+        <div class="flex-shrink-0 flex flex-wrap gap-2">
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">OpenAI</span>
+          <span class="text-xs border border-zinc-700 text-zinc-400 px-3 py-1 rounded">LangChain</span>
+        </div>
+        <div class="text-zinc-600 group-hover:text-white group-hover:translate-x-2 transition-all">→</div>
       </div>
     </div>
   </div>
 </section>
-<section data-component-name="TESTIMONIALS 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="Testimonials-2" data-aria-hidden="true" aria-hidden="true">
+<section data-component-name="TESTIMONIALS 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="Testimonials-2">
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
   <div class="relative z-10 max-w-7xl mx-auto">
     <div class="flex items-center gap-4 mb-4">
@@ -447,48 +258,7 @@ const Home = () => {
     </div>
   </div>
 </section>
-
-<section data-component-name="CONTACT 3" class="relative bg-[#0a0a0a] py-24 px-4 sm:px-6 lg:px-8 font-mono overflow-hidden" data-sidebar-id="Contact-2" data-aria-hidden="true" aria-hidden="true">
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-  <div class="relative z-10 max-w-5xl mx-auto text-center">
-    <div class="flex items-center justify-center gap-4 mb-8">
-      <span class="w-2 h-2 bg-[#22d3ee] shadow-[0_0_8px_#22d3ee] animate-pulse"></span>
-      <span class="text-[#22d3ee] text-xs uppercase tracking-[0.3em]">// contact.sys</span>
-    </div>
-    <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-tighter text-white mb-6 leading-none">
-      READY TO<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-[#a855f7]">INITIALIZE?</span>
-    </h2>
-    <p class="text-zinc-400 text-lg max-w-2xl mx-auto mb-12 leading-relaxed">Available for select projects and collaborations. If you have a vision that pushes boundaries, let's connect.</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-      <a href="mailto:hello@dev.com" class="group relative px-10 py-5 border border-[#22d3ee] text-[#22d3ee] font-black uppercase tracking-widest overflow-hidden hover:text-[#0a0a0a] transition-colors duration-300">
-        <span class="absolute inset-0 bg-[#22d3ee] -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-300 z-0"></span>
-        <span class="relative z-10">Send Message</span>
-      </a>
-      <a href="#" class="px-10 py-5 border border-zinc-700 text-zinc-400 font-black uppercase tracking-widest hover:border-[#a855f7] hover:text-[#a855f7] hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] transition-all duration-300">
-        View GitHub
-      </a>
-    </div>
-    <!-- Contact info grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-zinc-800 pt-12">
-      <div class="text-center">
-        <div class="text-xs text-zinc-600 uppercase tracking-widest mb-2">Email</div>
-        <a href="mailto:hello@dev.com" class="text-zinc-300 hover:text-[#22d3ee] transition-colors">hello@dev.com</a>
-      </div>
-      <div class="text-center">
-        <div class="text-xs text-zinc-600 uppercase tracking-widest mb-2">Location</div>
-        <span class="text-zinc-300">Bangalore, India</span>
-      </div>
-      <div class="text-center">
-        <div class="text-xs text-zinc-600 uppercase tracking-widest mb-2">Status</div>
-        <span class="text-green-400 flex items-center justify-center gap-2">
-          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-[0_0_6px_#4ade80]"></span>
-          Available
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
-<footer data-component-name="FOOTER 3" class="relative bg-[#0a0a0a] border-t border-[#22d3ee]/20 py-16 px-4 sm:px-6 lg:px-8 font-mono" data-sidebar-id="Footer-2" data-aria-hidden="true" aria-hidden="true">
+<footer data-component-name="FOOTER 3" class="relative bg-[#0a0a0a] border-t border-[#22d3ee]/20 py-16 px-4 sm:px-6 lg:px-8 font-mono" data-sidebar-id="Footer-2">
   <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#22d3ee] to-transparent shadow-[0_0_15px_#22d3ee]"></div>
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-[#22d3ee]/10">
